@@ -11,7 +11,7 @@ image:
 env:
 
 # enable this flag to use knative serve to deploy the app
-knativeDeploy: false
+knativeDeploy: true
 
 service:
   name: goqsr
@@ -39,3 +39,4 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 1
 terminationGracePeriodSeconds: 10
+
