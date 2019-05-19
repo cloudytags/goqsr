@@ -37,5 +37,5 @@ spec:
               timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}
             terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
             resources:
-{{ toYaml .Values.resources | indent 12 }}
+{{ toYaml .Values.resources | indent 16 }}
 {{- end }}
